@@ -13,7 +13,7 @@ app.controller("PolicyListCtrl", function($scope){
             name:'Ann Summer', phone: '+27-61-453-5444', email:'ann.lieb@', policyno: '0013983887/0013983887'
         },
         {
-            name:'Anabelle Samuel', phone: '+27-61-453-5444', email:'ann.lieb@', policyno: '0013983887/0013983887'
+            name:'Anabelle Samuel', phone: '+27-61-453-5444', email:'ann.lieb@', policyno: '0023983887/0023983887'
         }
 
     ]
