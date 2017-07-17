@@ -1,32 +1,47 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .searchBar{
-height:60px;
-width:100%;
-background:#443f5d;
+	height:60px;
+	width:100%;
+	background:#443f5d;
 }
 .searchBar input{
-
-
-background: #443f5d;
-   border: 0;
+	background: #443f5d;
+	border: 0;
     outline: 0;
     border-bottom: 1px solid #ccc;
-    margin: 20px 50px;
+    margin: 20px 0px;
 	color:#FFF;
 	width:30%;
 }
+.policyDetails{
+	padding:10px 0px;
+}
 .policyDetails .clientName{
-width:100%;
+	width:100%;
+	margin:20px 50px;
+	font-size:25px
 }
 .policyDetails .clientDetails{
 		display:  table;
         width:100%;
-       
-       
         border-spacing:5px;
+		margin:20px 50px;
 }
 .divCol{
- float:left;
+		float:left;
         display:table-column;
         width:30%;
         
 		}
+.policyDetails:nth-child(1), .policyDetails:nth-child(odd){
+    background:#ccc;
+}
+.fa-search:before {
+   
+    color: #ccc;
+    padding: 30px;
+}
