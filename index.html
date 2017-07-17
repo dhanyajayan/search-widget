@@ -4,21 +4,23 @@
 <title>Search Widget</title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="font/css/font-awesome.min.css">
 <script src="script.js" ></script>
 
 </head>
 <body ng-app="myApp">
+
 <div id="content" ng-controller="PolicyListCtrl">
 
-        <div class="searchBar"><input type='text' ng-model='searchText' placeholder="SEARCH(Client Name / Policy Number)" /></div>
+        <div class="searchBar"><i class="fa fa-search" aria-hidden="true"></i><input type='text' ng-model='searchText' placeholder="SEARCH(Client Name / Policy Number)" /></div>
 
             <div ng-repeat='person in policy | filter:searchText' class="policyDetails">
                 <div class="clientName"> {{person.name}} </div>
 				
 				<div class="clientDetails">
-					<div class="divCol"> {{person.phone}} </div>
-					<div  class="divCol"> {{person.email}} </div>
-					<div  class="divCol"> {{person.policyno}} </div>
+					<div class="divCol"><i class="fa fa-phone"></i> {{person.phone}} </div>
+					<div  class="divCol"><i class="fa fa-at"></i> {{person.email}} </div>
+					<div  class="divCol"> <i class="fa fa-file-text"></i> Policy No .{{person.policyno}} </div>
 				</div>
             </div>
 
